@@ -30,9 +30,71 @@
 // }
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:100,300);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
 
-$blue:#8DD9FF;
-$yellow:#FFDA00;
+$blue:#37FDFC;
+$yellow: #ffffff;
+
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background: transparent url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:1;
+  -moz-animation:move-twink-back 500s linear infinite;
+  -ms-animation:move-twink-back 500s linear infinite;
+  -o-animation:move-twink-back 500s linear infinite;
+  -webkit-animation:move-twink-back 500s linear infinite;
+  animation:move-twink-back 500s linear infinite;
+
+}
+
+
+
+
 
 *, *:before, *:after {
   margin: 0;
@@ -163,22 +225,38 @@ footer p {
 
 
 
-.navbar-brand
+.navbar-default .navbar-brand 
 {
     position: absolute;
     width: 100%;
     left: 0;
-    top: -10px;
+    top: 10px;
     text-align: center;
     margin: auto;
+  
     
 
 }
 
+.navbar .nav > li > a {
+    float: none;
+    top: 15px;
+    line-height: 19px;
+    padding: 9px 10px 11px;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+    padding: 5px;
+    font-size: 15px;
+    margin: 5px;
+    font-family: 'Roboto';
+    border-radius: 5px;
+    color:  #ffffff;
+}
+
 .navbar-brand img 
 {
-opacity: 0.8;
-
+padding: 15px;
+border: 2px solid #ffffff;
 }
 
 
