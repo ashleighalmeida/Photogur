@@ -10,9 +10,11 @@
   <%= csrf_meta_tags %>
 
 
+
+
 </head>
 <body>
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -22,7 +24,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src=http://i57.tinypic.com/4j2a9l.png></a>
+      <a class="navbar-brand" href="#">Brand</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -66,12 +68,55 @@
   </div><!-- /.container-fluid -->
 </nav>
 
+<figure class="header">
+
+  <img src="http://wallpoper.com/images/00/30/02/00/dolphins-underwater_00300200.jpg" alt="" />
+  <figcaption class="title">
+    <h1>Photogur</h1>
+  </figcaption>
+  <span class="overlay">
+<svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 500 250" enable-background="new 0 0 500 250" xml:space="preserve" PreserveAspectRatio="none">
+<path fill="#FFFFFF" d="M250,246.5c-97.85,0-186.344-40.044-250-104.633V250h500V141.867C436.344,206.456,347.85,246.5,250,246.5z"
+  />
+</svg>
+  </span>
+</figure>
+<article class="body">
+  <p class="teaser">body goes here.</p>
+</article>
+
+
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>View on Github</h2>
+                    <p>github shyt</p>
+                    <a href="#" class="btn btn-default btn-lg">Fork on Github</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>footer content</p>
+        </div>
+    </footer>
+
 
 
 <div class="container">
   <ul class="nav nav-tabs">
 
 <%= yield %>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src=" https://raw.github.com/motyar/firefly/master/jquery-firefly-0.2.js"> </script>
+
+
+
+
 
 </ul></div>
 </body>

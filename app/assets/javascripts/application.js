@@ -12,6 +12,23 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.firefly-0.4
+//= require jquery-firefly-0.2
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+
+
+
+function inViewport($el) {
+    var H = $(window).height(),
+        r = $el[0].getBoundingClientRect(), t=r.top, b=r.bottom;
+    return Math.max(0, t>0? H-t : (b<H?b:H));  
+}
+
+$(window).on("scroll resize", function(){
+  var window_offset = inViewport($('.intro')); 
+  $(".overlay").height(window_offset);
+  $(".caption").css("bottom", (window_offset / 4) );
+});
