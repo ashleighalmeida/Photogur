@@ -31,6 +31,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:100,300);
 @import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Lato);
 
 $blue:#37FDFC;
 $yellow: #ffffff;
@@ -125,17 +126,20 @@ html, body {
  
     z-index: 1;
     mix-blend-mode: multiply;
+    opacity: 0.8;
   }
 }
 
 .header .title {
   position: absolute;
-  bottom: 25%;
+  bottom: 60%;
   left: 0;
   width: 100%;
   text-align: center;
   z-index: 3;
   color: white;
+
+}
   
   h1 {
     display: inline-block;
@@ -143,7 +147,7 @@ html, body {
     font-size: 6vw;
     font-weight: 100;
   }
-}
+
 
 .header .overlay {
   position: absolute;
@@ -257,6 +261,69 @@ footer p {
 {
 padding: 15px;
 border: 2px solid #ffffff;
+
 }
+
+
+form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -250px;
+  width: 500px;
+  height: 200px;
+  border: 1px solid #fff;
+  z-index:2;
+}
+form p{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 170px;
+  color: #ffffff;
+  font-family: 'Lato';
+  font-size: 17px;
+  // text-transform: uppercase;
+  letter-spacing: 2px;
+}
+form input{
+  position: absolute;
+  margin-top: 20px;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+}
+form button{
+  margin: 0;
+  color: #fff;
+  background: #16a085;
+  border: none;
+  width: 508px;
+  height: 35px;
+  margin-top: 10px;
+  margin-left: -4px;
+  border-radius: 4px;
+  border-bottom: 4px solid #117A60;
+  transition: all .2s ease;
+  outline: none;
+  font-family: lato;
+  text-decoration: strong;
+  z-index:100;
+}
+form button:hover{
+  background: #149174;
+  color: #0C5645;
+}
+form button:active{
+  border:0;
+}
+
+
+
+
+
 
 

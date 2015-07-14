@@ -1,6 +1,13 @@
 
 
 <center>
+<%= form_for @picture do |f| %>
+  <input type="file" multiple>  <%= f.file_field :picture %>
+  <p>Drag your files here or click in this area.</p>
+  <button type="submit"> <%= f.submit "Save" %> Upload </button>
+</form>
+<% end %>
+<!-- 
 
 <h1>Add a picture</h1>
 <%= link_to "Back to Pictures", pictures_url %>
@@ -13,6 +20,9 @@
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </p>
+    <p>
+   <%= f.file_field :picture %>
+  </p>
   <p>
     <%= f.label :url %><br>
     <%= f.text_field :url %>
@@ -22,4 +32,4 @@
   </p>
 <% end %>
 
-</center>
+</center> -->
