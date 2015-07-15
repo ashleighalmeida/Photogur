@@ -84,7 +84,7 @@ $yellow: #ffffff;
 
 .stars {
   background: transparent url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-  z-index:1;
+  z-index:100;
   -moz-animation:move-twink-back 500s linear infinite;
   -ms-animation:move-twink-back 500s linear infinite;
   -o-animation:move-twink-back 500s linear infinite;
@@ -221,6 +221,9 @@ html, body {
 footer {
     padding: 50px 0;
     background: #ffffff;
+    font-family: 'Lato';
+    font-color: #ccc;
+    letter-spacing: 3px;
 }
 
 footer p {
@@ -349,10 +352,15 @@ padding-right: 50px;
  
 }
 
-.col-sm-4 
+.col-sm-4 img
 {
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
+
+ //  background-size: 10%;
+ // border: 1px solid #ccc;
+ //  border-radius: 30%;
+ //  padding: 40px;
+ //  // margin: 30px;
+
 }
 
 

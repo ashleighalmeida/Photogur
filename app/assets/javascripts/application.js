@@ -28,7 +28,7 @@ function inViewport($el) {
 }
 
 $(window).on("scroll resize", function(){
-  var window_offset = inViewport($('.intro')); 
+  var window_offset = inViewport($('.header')); 
   $(".overlay").height(window_offset);
   $(".caption").css("bottom", (window_offset / 4) );
 });
