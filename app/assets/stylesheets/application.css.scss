@@ -170,24 +170,32 @@ html, body {
 
 .body {
   width: 100%;
-  max-width: 60rem;
+  max-width: 90rem;
   height: 50%;
   margin: 0 auto;
-  padding: 10vw 5vw 0 5vw;
+  // padding: 10vw 5vw 0 5vw;
   color: mix(black, $blue, 50%);
   font-weight: 300;
-  
+   background-color: #ffffff;
   p {margin-bottom: 1.5rem;}
 }
 
 .body .teaser {
   font-size: 1.6rem;
+  position:relative;
+  z-index:100;
   text-align: center;
+
+  width: 100%;
+  min-height: 50%;
+  background-color: #000000;
+  margin: 0;
 }
 
 
 
 .download-section {
+
     width: 100%;
     padding: 30px 0;
     color: #fff;
@@ -203,7 +211,7 @@ html, body {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 150px;
     }
 
 
@@ -271,10 +279,12 @@ form{
   left: 50%;
   margin-top: -100px;
   margin-left: -250px;
-  width: 500px;
+  min-width: 500px;
   height: 200px;
   border: 1px solid #fff;
   z-index:2;
+
+
 }
 form p{
   width: 100%;
@@ -322,6 +332,28 @@ form button:active{
 }
 
 
+.row 
+{
+  margin: 0;
+padding-left: 50px;
+padding-right: 50px;
+  width: 100%;
+   font-size: 15px;
+    position: relative;
+    z-index: -2;
+
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // background-size: cover;
+    // -o-background-size: cover;
+ 
+}
+
+.col-sm-4 
+{
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
 
 
 

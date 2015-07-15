@@ -1,5 +1,5 @@
 
-
+<container>
 <center>
 <%= form_for @picture do |f| %>
   <input type="file" multiple>  <%= f.file_field :picture %>
@@ -7,6 +7,7 @@
   <button type="submit"> <%= f.submit "Save" %> Upload </button>
 </form>
 <% end %>
+</container>
 <!-- 
 
 <h1>Add a picture</h1>
