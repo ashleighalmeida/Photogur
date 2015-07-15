@@ -4,7 +4,7 @@ class CreatePictures < ActiveRecord::Migration
       t.string :artist
       t.string :title
       t.string :url
-      t.string :pictures
+      t.string :picture
 
       t.timestamps null: false
     end

@@ -33,6 +33,7 @@ class PicturesController < ApplicationController
 
     if @picture.update_attributes(picture_params)
       redirect_to "/pictures/#{@picture.id}"
+        flash.now[:notice] = "Upload successful!"
     else
       render :edit
     end
