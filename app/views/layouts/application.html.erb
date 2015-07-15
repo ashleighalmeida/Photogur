@@ -1,144 +1,157 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Photogur</title>
+        <%=s tylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track'=>true %>
+            <%=j avascript_include_tag 'application', 'data-turbolinks-track'=>true %>
+                <%=c srf_meta_tags %>
+                    <div class="stars"></div>
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
 
+                    </button> <a class="navbar-brand" href="#"><img src=http://i59.tinypic.com/2e5i2aw.png></a>
 
-  <title>Photogur</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a>
 
+                        </li>
+                        <li><a href="#">Link</a>
 
-<div class="stars"></div>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a>
 
-</head>
-<body>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img src=http://i59.tinypic.com/2e5i2aw.png></a>
-    </div>
+                                </li>
+                                <li><a href="#">Another action</a>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-       
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+                                </li>
+                                <li><a href="#">Something else here</a>
 
-<figure class="header">
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a>
 
-  <img src="http://i62.tinypic.com/17rdck.jpg" alt="" />
-  <figcaption class="title">
-   
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a>
 
- 
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search"></form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Link</a>
 
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a>
 
-  
-  </figcaption>
-  <span class="overlay">
+                                </li>
+                                <li><a href="#">Another action</a>
+
+                                </li>
+                                <li><a href="#">Something else here</a>
+
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <figure class="header">
+            <img src="http://i62.tinypic.com/17rdck.jpg" alt="" />
+            <figcaption class="title"></figcaption> <span class="overlay">
 <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 500 250" enable-background="new 0 0 500 250" xml:space="preserve" PreserveAspectRatio="none">
 <path fill="#FFFFFF" d="M250,246.5c-97.85,0-186.344-40.044-250-104.633V250h500V141.867C436.344,206.456,347.85,246.5,250,246.5z"
   />
 </svg>
   </span>
-</figure>
-<container>
-  <p class="teaser">
 
-    
-    <div class="row">
-        <div class="col-sm-4">
-          <center><h1><img src=http://i60.tinypic.com/2ccknpz.png></h1>
-          <p>Domestic confined any but son bachelor advanced remember. How proceed offered her offence shy forming. Returned peculiar pleasant but appetite differed she. Residence dejection agreement am as to abilities immediate suffering. Ye am depending propriety sweetness distrusts belonging collected. Smiling mention he in thought equally musical. Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.</p></center>
-        </div>
-         <div class="col-sm-4">
-          <center> <h1><img src=http://i58.tinypic.com/154btox.png></h1>
-          <p>There worse by an of miles civil. Manner before lively wholly am mr indeed expect. Among every merry his yet has her. You mistress get dashwood children off. Met whose marry under the merit. In it do continual consulted no listening. Devonshire sir sex motionless travelling six themselves. So colonel as greatly shewing herself observe ashamed. Demands minutes regular ye to detract is. </p>
-        </div></center>
-         <div class="col-sm-4"><Center>
-           <h1><img src=http://i58.tinypic.com/2ykxild.png></h1>
-          <p>Spot of come to ever hand as lady meet on. Delicate contempt received two yet advanced. Gentleman as belonging he commanded believing dejection in by. On no am winding chicken so behaved. Its preserved sex enjoyment new way behaviour. Him yet devonshire celebrated especially. Unfeeling one provision are smallness resembled repulsive. </p></Center>
-        </div>
-      </div><!-- end of row-->
-      </div>
-  </p>
-</article></p></container>
+        </figure>
+        <container>
+            <p class="teaser">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <center>
+                             <h1><img src=http://i60.tinypic.com/2ccknpz.png></h1>
 
+                            <p>Domestic confined any but son bachelor advanced remember. How proceed offered her offence shy forming. Returned peculiar pleasant but appetite differed she. Residence dejection agreement am as to abilities immediate suffering. Ye am depending propriety sweetness distrusts belonging collected. Smiling mention he in thought equally musical. Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
+                        </center>
+                    </div>
+                    <div class="col-sm-4">
+                        <center>
+                             <h1><img src=http://i58.tinypic.com/154btox.png></h1>
 
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>View on Github</h2>
-                    <p>This project was written in Ruby, Rails, Jquery,  and Bootstrap.</p>
-                    <a href="https://github.com/ashleighalmeida/Photogur" class="btn btn-default btn-lg">Click me</a>
+                            <p>There worse by an of miles civil. Manner before lively wholly am mr indeed expect. Among every merry his yet has her. You mistress get dashwood children off. Met whose marry under the merit. In it do continual consulted no listening. Devonshire sir sex motionless travelling six themselves. So colonel as greatly shewing herself observe ashamed. Demands minutes regular ye to detract is.</p>
+                    </div>
+                    </center>
+                    <div class="col-sm-4">
+                        <Center>
+                             <h1><img src=http://i58.tinypic.com/2ykxild.png></h1>
+
+                            <p>Spot of come to ever hand as lady meet on. Delicate contempt received two yet advanced. Gentleman as belonging he commanded believing dejection in by. On no am winding chicken so behaved. Its preserved sex enjoyment new way behaviour. Him yet devonshire celebrated especially. Unfeeling one provision are smallness resembled repulsive.</p>
+                        </Center>
+                    </div>
+                </div>
+                <!-- end of row-->
+                </div>
+            </p>
+            </article>
+            </p>
+        </container>
+        <section id="download" class="content-section text-center">
+            <div class="download-section">
+                <div class="container">
+                    <div class="col-lg-8 col-lg-offset-2">
+                         <h2>View on Github</h2>
+
+                        <p>This project was written in Ruby, Rails, Jquery, and Bootstrap.</p> <a href="https://github.com/ashleighalmeida/Photogur" class="btn btn-default btn-lg">Click me</a>
+
+                    </div>
                 </div>
             </div>
+        </section>
+        <footer>
+            <div class="container text-center">
+                <p>ashleighalmeida@gmail.com</p>
+            </div>
+        </footer>
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+                <script src=" https://raw.github.com/motyar/firefly/master/jquery-firefly-0.2.js">
+                    
+                </script>
+                <%=y ield %>
+            </ul>
         </div>
-    </section>
+    </body>
 
-    <footer>
-        <div class="container text-center">
-            <p>ashleighalmeida@gmail.com</p>
-        </div>
-    </footer>
-
-
-
-<div class="container">
-  <ul class="nav nav-tabs">
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script src=" https://raw.github.com/motyar/firefly/master/jquery-firefly-0.2.js"> </script>
-
-<%= yield %>
-
-
-
-</ul></div>
-</body>
 </html>
