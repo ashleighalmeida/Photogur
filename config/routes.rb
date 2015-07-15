@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
 
-root :to => "pictures#new"
+root "pictures#new"
 
 resources :pictures
 
