@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
 
 
-root :to => "pictures#new"
+root :to => "pictures#index"
 
-resources :pictures
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
