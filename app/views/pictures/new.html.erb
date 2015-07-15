@@ -1,13 +1,14 @@
 
-
+<container>
 <center>
 <%= form_for @picture do |f| %>
   <input type="file" multiple>  <%= f.file_field :picture %>
   <p>Drag your files here or click in this area.</p>
-  <button type="submit"> <%= f.submit "Save" %> Upload </button>
+  <button type="submit", target: "_blank"> <%= f.submit "Save", target: "_blank" %> Upload </button>
+
 </form>
 <% end %>
-
+</container>
 <!-- 
 
 <h1>Add a picture</h1>

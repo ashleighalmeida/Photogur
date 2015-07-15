@@ -8,14 +8,12 @@ class PicturesController < ApplicationController
     @picture = Picture.new
   end
 
-  def create
-    # make a new picture with what picture_params returns (which is a method we're calling)
+def create
     @picture = Picture.new(picture_params)
     if @picture.save
-      # if the save for the picture was successful, go to index.html.erb
-      redirect_to pictures_url
+      flash[:alert] = "Upload successful!"
+      redirect_to "/pictures/#{@picture.id}"
     else
-      # otherwise render the view associated with the action :new (i.e. new.html.erb)
       render :new
     end
   end
@@ -33,7 +31,6 @@ class PicturesController < ApplicationController
 
     if @picture.update_attributes(picture_params)
       redirect_to "/pictures/#{@picture.id}"
-        flash.now[:notice] = "Upload successful!"
     else
       render :edit
     end
